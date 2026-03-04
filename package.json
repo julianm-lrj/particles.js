@@ -1,14 +1,35 @@
 {
-  "name": "particles.js",
+  "name": "@julianm-lrj/particles.js",
   "version": "2.0.0",
   "description": "A lightweight JavaScript library for creating particles",
-  "homepage": "http://vincentgarreau.com/particles.js",
+  "homepage": "https://github.com/julianm-lrj/particles.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src/index.d.ts"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/VincentGarreau/particles.js.git"
+    "url": "https://github.com/julianm-lrj/particles.js.git"
   },
   "keywords": [
     "particles",
@@ -17,12 +38,14 @@
   ],
   "author": "Vincent Garreau",
   "license": "MIT",
-  "files": [
-    "particles.js",
-    "particles.min.js"
-  ],
   "bugs": {
-    "url": "https://github.com/VincentGarreau/particles.js/issues"
+    "url": "https://github.com/julianm-lrj/particles.js/issues"
   },
-  "homepage": "https://github.com/VincentGarreau/particles.js"
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.0",
+    "jsdom": "^28.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.0"
+  }
 }
