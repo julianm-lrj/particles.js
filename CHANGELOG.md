@@ -14,9 +14,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and 
 - **ESM / CJS / IIFE builds** via `tsup` (`dist/index.mjs`, `dist/index.cjs`, `dist/particles.min.js`)
 - **TypeScript declarations** (`src/index.d.ts`) with full `ParticlesConfig` types, named exports, and `Window` global augmentation
 - **`exports` map** in `package.json` (`types` / `import` / `require` / `default`)
-- **`engines: { node: ">=18" }`** – safe to import in Node without a DOM
+- **`engines: { node: ">=20" }`** – safe to import in Node without a DOM
 - **Vitest + jsdom test suite** (`test/particles.test.js`) – 9 tests covering canvas creation, `pJSDom` population, `particlesJS.load`, module exports, and window globals
-- **GitHub Actions CI** (`.github/workflows/ci.yml`) – Node 18 / 20 / 22 matrix with `npm audit` (informational)
+- **GitHub Actions CI** (`.github/workflows/ci.yml`) – Node 20 / 22 matrix with `npm audit` (informational)
 - **Dependabot** (`.github/dependabot.yml`) – weekly npm dependency updates
 - **`CHANGELOG.md`** (this file)
 

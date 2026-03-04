@@ -4,7 +4,7 @@
   "description": "A lightweight JavaScript library for creating particles",
   "homepage": "https://github.com/julianm-lrj/particles.js",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",

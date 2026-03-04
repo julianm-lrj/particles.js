@@ -1,7 +1,7 @@
 ## @julianm-lrj/particles.js
 
 > **Fork notice:** This is a maintained community fork of [Vincent Garreau's particles.js](https://github.com/VincentGarreau/particles.js), published as the scoped package `@julianm-lrj/particles.js`.  
-> It adds Node ≥ 18 support, ESM / CJS / IIFE builds, TypeScript types, Vitest tests, and a GitHub Actions CI pipeline — while preserving full browser backwards compatibility.  
+> It adds Node ≥ 20 support, ESM / CJS / IIFE builds, TypeScript types, Vitest tests, and a GitHub Actions CI pipeline — while preserving full browser backwards compatibility.  
 > See [CHANGELOG.md](./CHANGELOG.md) for a full list of changes introduced in v2.0.0.
 
 ### A lightweight JavaScript library for creating particles.
