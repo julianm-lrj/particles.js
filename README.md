@@ -1,4 +1,8 @@
-## particles.js
+## @julianm-lrj/particles.js
+
+> **Fork notice:** This is a maintained community fork of [Vincent Garreau's particles.js](https://github.com/VincentGarreau/particles.js), published as the scoped package `@julianm-lrj/particles.js`.  
+> It adds Node ≥ 18 support, ESM / CJS / IIFE builds, TypeScript types, Vitest tests, and a GitHub Actions CI pipeline — while preserving full browser backwards compatibility.  
+> See [CHANGELOG.md](./CHANGELOG.md) for a full list of changes introduced in v2.0.0.
 
 ### A lightweight JavaScript library for creating particles.
 
@@ -212,7 +216,27 @@ key | option type / notes | example
 
 ### `Packages install`
 
-##### ***npm***
+##### ***npm (this fork)***
+```
+npm install @julianm-lrj/particles.js
+```
+
+**ESM / bundler**
+```js
+import { particlesJS, pJSDom } from '@julianm-lrj/particles.js';
+```
+
+**CommonJS**
+```js
+const { particlesJS } = require('@julianm-lrj/particles.js');
+```
+
+**Browser IIFE (CDN / `<script>` tag)**
+```html
+<script src="node_modules/@julianm-lrj/particles.js/dist/particles.min.js"></script>
+```
+
+##### ***npm (original)***
 https://www.npmjs.com/package/particles.js
 ```
 npm install particles.js
